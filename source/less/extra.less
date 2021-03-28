@@ -1,0 +1,121 @@
+.extra {
+  &__row {
+    margin-top: 9px;
+  }
+
+  &__subtitle {
+    position: relative;
+    display: inline-block;
+    vertical-align: baseline;
+    margin: 0;
+    padding-right: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 100%;
+    font-family: "Oswald", "Arial", sans-serif;
+    background-color: @basic-white;
+    color: @basic-black;
+
+    margin-bottom: 34px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 75px;
+      height: 3px;
+      margin-top: calc(1em / 2 + 3px);
+      background-color: @basic-green;
+      z-index: -1;
+    }
+
+    @media (min-width: @tablet) {
+      font-size: 36px;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: grid;
+    gap: 32px;
+  }
+
+  &__title {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 125%;
+    text-align: start;
+    text-transform: uppercase;
+    color: @basic-black;
+  }
+
+  &__table {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  &__line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__cell {
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: @special_dark-grey;
+    padding: 0;
+  }
+
+  &__promo {
+    width: 100%;
+    background-image: url(../img/gift-photo-mobile@1x.jpg);
+    height: 289px;
+    background-repeat: no-repeat;
+    margin-top: 60px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 60px;
+      left: calc(50% - 27.5px);
+      flex-shrink: 0;
+      content: "";
+      display: block;
+      width: 55px;
+      height: 60px;
+      background: url(../img/icon-gift.svg);
+      background-size: 55px 60px;
+      background-repeat: no-repeat;
+    }
+
+    &-text {
+      font-family: "Arial", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 125%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      color: @basic-white;
+
+      padding-top: 185px;
+      width: 155px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}

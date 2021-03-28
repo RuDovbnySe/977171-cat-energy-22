@@ -1,0 +1,45 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+
+  @media (min-width: @tablet) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-min) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1110px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1220px;
+  }
+
+  &-form {
+    @media (min-width: @tablet) {
+      width: 630px;
+    }
+
+    @media (min-width: @desktop-min) {
+      width: 1110px;
+
+      &--desktop {
+        width: 100%;
+      }
+    }
+
+    @media (min-width: @desktop) {
+      width: 1220px;
+
+      &--desktop {
+        width: 100%;
+      }
+    }
+  }
+}
