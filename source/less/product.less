@@ -1,0 +1,140 @@
+.product {
+  @media (min-width: @tablet) {
+    width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__title {
+    margin-top: 10px;
+
+    &--text {
+      font-family: "Oswald", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 125%;
+      text-transform: uppercase;
+      color: @special_dark-grey-2;
+      width: 90px;
+      text-align: start;
+
+      @media (min-width: @tablet) {
+        font-size: 20px;
+        line-height: 120%;
+        width: 150px;
+        text-align: center;
+      }
+
+      @media (min-width: @desktop-min) {
+        line-height: 105%;
+      }
+    }
+  }
+
+  &__options {
+    width: 100%;
+    margin-top: 12px;
+
+    &-cell {
+      font-size: 12px;
+      line-height: 133%;
+      text-align: center;
+      color: @special_dark-grey;
+      padding: 0;
+
+      @media (min-width: @tablet) {
+        font-size: 16px;
+        line-height: 100%;
+      }
+
+      &--tittle {
+        text-align: start;
+        font-style: normal;
+        font-weight: normal;
+      }
+
+      &--value {
+        text-align: end;
+      }
+    }
+
+    td {
+      @media (min-width: @tablet) {
+        border-bottom: 1px solid @special_grey;
+        padding-top: 6px;
+        padding-bottom: 6px;
+      }
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 15px;
+    height: 112px;
+
+    @media (min-width: @tablet) {
+      display: block;
+      text-align: center;
+      height: 391px;
+    }
+  }
+
+  &__illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+
+    @media (min-width: @tablet) {
+      padding-top: 35px;
+    }
+  }
+
+  &__description {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &-more {
+    margin-top: 10px;
+
+    & svg {
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+    }
+
+    &__description {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 25px;
+    }
+
+    &__title {
+      font-family: "Oswald", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 125%;
+      text-align: center;
+      text-transform: uppercase;
+      color: @basic-black;
+      margin-top: 20px;
+    }
+
+    &__text {
+      font-size: 12px;
+      line-height: 133%;
+      text-align: center;
+      color: @special_dark-grey;
+      margin-top: 9px;
+    }
+  }
+}
