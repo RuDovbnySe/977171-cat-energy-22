@@ -165,17 +165,27 @@
 
     @media (min-width: @tablet) {
       border: 1px solid @form-border;
+      margin-top: 40px;
+      padding-bottom: 30px;
+    }
+  }
+
+  &__row {
+    @media (min-width: @tablet) {
+      margin-left: 15px;
+      display: grid;
+      gap: 5px;
+      margin-top: 20px;
     }
   }
 
   &__column {
     padding-left: 20px;
-    margin-top: 15px;
-    margin-bottom: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
 
     @media (min-width: @tablet) {
-      padding-bottom: 12px;
-      padding-top: 12px;
+      padding-top: 15px;
     }
   }
 
@@ -196,14 +206,18 @@
   &__box {
     position: absolute;
     align-items: center;
-    margin-left: -46px;
+    margin-left: -50px;
     margin-top: -6px;
-    width: 30px;
-    height: 30px;
     overflow: hidden;
     border: 1px solid @special_grey;
     border-radius: 50%;
     box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__text {
+    margin-left: 10px;
   }
 
   &__label {
@@ -222,18 +236,10 @@
       margin-left: 20px;
     }
   }
-
-  &__row {
-    @media (min-width: @tablet) {
-      margin-left: 28px;
-      padding-top: 12px;
-      padding-bottom: 12px;
-    }
-  }
 }
 
 .contact {
-  padding-top: 25px;
+  margin-top: 75px;
   position: relative;
 
   &__wrapper {
@@ -258,7 +264,7 @@
 
     @media (min-width: @tablet) {
       width: 100%;
-      top: 50px;
+      top: 20px;
     }
   }
 
@@ -282,7 +288,7 @@
   }
 
   &__block {
-    margin-top: 35px;
+    margin-top: 70px;
 
     @media (min-width: @desktop-min) {
       display: grid;
@@ -292,7 +298,7 @@
   }
 
   &__column {
-    margin-top: 14px;
+    padding-top: 10px;
   }
 
   &__form {
@@ -300,6 +306,10 @@
     width: 100%;
     display: flex;
     align-items: center;
+
+    @media (min-width: @tablet) {
+      margin-bottom: 10px;
+    }
 
     &--text {
       font-family: "Oswald", "Arial", sans-serif;
@@ -315,6 +325,7 @@
       @media (min-width: @tablet) {
         font-size: 20px;
         line-height: 150%;
+        margin-right: 20px;
       }
     }
 
@@ -333,6 +344,8 @@
       @media (min-width: @tablet) {
         font-size: 20px;
         line-height: 150%;
+        padding-top: 5px;
+        padding-bottom: 10px;
       }
     }
 
@@ -361,6 +374,11 @@
   padding-top: 23px;
   padding-bottom: 25px;
 
+  @media (min-width: @tablet) {
+    padding: 0;
+    margin-top: 60px;
+  }
+
   &__background {
     position: absolute;
     border-bottom: 2px solid @basic-green;
@@ -372,7 +390,7 @@
 
     @media (min-width: @tablet) {
       width: 100%;
-      top: 45px;
+      top: 20px;
     }
   }
 
@@ -387,6 +405,7 @@
 
       @media (min-width: @tablet) {
         padding-left: 20px;
+        padding-top: 45px;
       }
     }
   }
@@ -433,6 +452,10 @@
 .check {
   position: relative;
 
+  @media (min-width: @tablet) {
+    margin-top: 100px;
+  }
+
   &__wrapper {
     border: none;
     margin: 0;
@@ -470,6 +493,7 @@
 
     @media (min-width: @tablet) {
       width: 100%;
+      top: 25px;
     }
   }
 
@@ -481,7 +505,8 @@
     @media (min-width: @tablet) {
       grid-template-columns: 1fr 1fr;
       column-gap: 60px;
-      row-gap: 30px;
+      row-gap: 40px;
+      margin-top: 63px;
     }
 
     @media (min-width: @desktop-min) {
@@ -496,6 +521,10 @@
     padding-left: 20px;
     margin-top: 7px;
     margin-bottom: 8px;
+
+    @media (min-width: @tablet) {
+      margin: 0;
+    }
   }
 
   &__input {
@@ -518,6 +547,12 @@
     overflow: hidden;
     border: 1px solid @special_grey;
     box-sizing: border-box;
+
+    @media (min-width: @tablet) {
+      margin-left: -18px;
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &__label {
@@ -535,12 +570,17 @@
     @media (min-width: @tablet) {
       font-size: 20px;
       line-height: 150%;
+      padding-left: 40px;
     }
   }
 }
 
 .send {
   margin-top: 32px;
+
+  @media (min-width: @tablet) {
+    margin-top: 50px;
+  }
 
   @media (min-width: @desktop-min) {
     margin-bottom: 80px;
@@ -578,6 +618,9 @@
       text-align: start;
       padding: 0;
       align-items: center;
+      font-size: 16px;
+      line-height: 100%;
+      margin-top: 15px;
     }
   }
 }
