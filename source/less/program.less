@@ -8,6 +8,10 @@
     margin-top: 60px;
   }
 
+  @media (min-width: @desktop-min) {
+    margin-top: 70px;
+  }
+
   &__form {
     margin-top: 25px;
   }
@@ -59,8 +63,12 @@
 }
 
 .cat {
-  padding-top: 39px;
+  padding-top: 12px;
   padding-bottom: 10px;
+
+  @media (min-width: @tablet) {
+    padding-top: 39px;
+  }
 
   &__form {
     width: 100%;
@@ -85,11 +93,15 @@
       @media (min-width: @tablet) {
         margin-right: 23px;
       }
+
+      @media (min-width: @desktop-min) {
+        width: 93px;
+      }
     }
 
     &--age {
       width: 155px;
-      margin-right: 5px;
+      margin-right: 10px;
 
       @media (min-width: @tablet) {
         margin-right: 19px;
@@ -144,18 +156,29 @@
     border: none;
     margin: 0;
     display: grid;
-    gap: 15px;
+    gap: 7px;
+
+    @media (min-width: @tablet) {
+      gap: 15px;
+    }
   }
 }
 
 .radio {
-  padding-top: 15px;
+  margin-top: 8px;
+  padding-top: 28px;
+  padding-bottom: 22px;
   border-bottom: 1px solid @grey-line-footer;
   border-top: 1px solid @grey-line-footer;
   position: relative;
 
   @media (min-width: @tablet) {
     border: none;
+  }
+
+  @media (min-width: @desktop-min) {
+    margin-top: 21px;
+    padding-top: 0;
   }
 
   &__wrapper {
@@ -165,27 +188,35 @@
 
     @media (min-width: @tablet) {
       border: 1px solid @form-border;
-      margin-top: 40px;
+      margin-top: 20px;
+      margin-left: 3px;
       padding-bottom: 30px;
+    }
+
+    @media (min-width: @desktop-min) {
+      margin-left: 0;
     }
   }
 
   &__row {
+    display: grid;
+    gap: 25px;
+
     @media (min-width: @tablet) {
       margin-left: 15px;
-      display: grid;
-      gap: 5px;
+      gap: 13px;
       margin-top: 20px;
     }
   }
 
   &__column {
-    padding-left: 20px;
+    padding-left: 10px;
     margin-top: 0;
     margin-bottom: 0;
 
     @media (min-width: @tablet) {
-      padding-top: 15px;
+      padding-top: 10px;
+      padding-left: 3px;
     }
   }
 
@@ -206,18 +237,27 @@
   &__box {
     position: absolute;
     align-items: center;
-    margin-left: -50px;
+    margin-left: -37px;
     margin-top: -6px;
     overflow: hidden;
     border: 1px solid @special_grey;
     border-radius: 50%;
     box-sizing: border-box;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+
+    @media (min-width: @tablet) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &__text {
     margin-left: 10px;
+
+    @media (min-width: @tablet) {
+      margin-left: 25px;
+    }
   }
 
   &__label {
@@ -239,8 +279,16 @@
 }
 
 .contact {
-  margin-top: 75px;
+  margin-top: 30px;
   position: relative;
+
+  @media (min-width: @tablet) {
+    margin-top: 55px;
+  }
+
+  @media (min-width: @desktop-min) {
+    margin-top: 45px;
+  }
 
   &__wrapper {
     border: none;
@@ -258,7 +306,7 @@
     border-bottom: 2px solid @basic-green;
     height: 2px;
     width: 100px;
-    top: 40px;
+    top: 12px;
     z-index: -1;
     right: 0;
 
@@ -288,7 +336,11 @@
   }
 
   &__block {
-    margin-top: 70px;
+    margin-top: 25px;
+
+    @media (min-width: @tablet) {
+      margin-top: 65px;
+    }
 
     @media (min-width: @desktop-min) {
       display: grid;
@@ -405,7 +457,7 @@
 
       @media (min-width: @tablet) {
         padding-left: 20px;
-        padding-top: 45px;
+        margin-top: 38px;
       }
     }
   }
@@ -453,7 +505,11 @@
   position: relative;
 
   @media (min-width: @tablet) {
-    margin-top: 100px;
+    margin-top: 63px;
+  }
+
+  @media (min-width: @desktop-min) {
+    margin-top: 68px;
   }
 
   &__wrapper {
@@ -513,7 +569,6 @@
       grid-template-columns: 1fr 1fr 1fr 1fr;
       column-gap: 80px;
       margin-top: 60px;
-      margin-bottom: 60px;
     }
   }
 
@@ -540,10 +595,10 @@
   &__box {
     position: absolute;
     align-items: center;
-    margin-left: -16px;
+    margin-left: -20px;
     margin-top: -5px;
-    width: 26px;
-    height: 26px;
+    width: 30px;
+    height: 30px;
     overflow: hidden;
     border: 1px solid @special_grey;
     box-sizing: border-box;
@@ -583,8 +638,9 @@
   }
 
   @media (min-width: @desktop-min) {
+    margin-top: 60px;
+    height: 60px;
     margin-bottom: 80px;
-    height: 52px;
   }
 
   &__wrapper {
@@ -593,12 +649,17 @@
       grid-template-columns: 1fr 1fr;
       column-gap: 60px;
     }
+
+    @media (min-width: @desktop-min) {
+      gap: 80px;
+    }
   }
 
   &__column {
     @media (min-width: @tablet) {
       width: 100%;
       align-self: center;
+      margin-top: 5px;
     }
   }
 
@@ -620,7 +681,7 @@
       align-items: center;
       font-size: 16px;
       line-height: 100%;
-      margin-top: 15px;
+      margin-left: 10px;
     }
   }
 }
@@ -647,6 +708,11 @@
   background-image: url("../img/radiobutton active.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 10px 10px;
+
+  @media (min-width: @tablet) {
+    background-size: 16px 16px;
+  }
 }
 
 .radio__input:hover + .radio__box {

@@ -36,6 +36,7 @@
 
     @media (min-width: @desktop-min) {
       //margin-left: 55px;
+      width: 202px;
     }
 
     @media (min-width: @desktop) {
@@ -112,6 +113,7 @@
   &__toggle--close {
     border: none;
     background-color: inherit;
+    width: 36px;
 
     @media (min-width: @tablet) {
       display: none;
@@ -140,15 +142,17 @@
   }
 }
 
-.site-list {
-  display: flex;
-  flex-direction: column;
-  padding-left: 0;
-  margin: 0;
+.nav {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin: 0;
 
-  @media (min-width: @tablet) {
-    flex-direction: row;
-    justify-content: space-between;
+    @media (min-width: @tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__item {
@@ -160,17 +164,16 @@
     font-size: 20px;
     line-height: 100%;
     text-transform: uppercase;
-
     color: @basic-black;
 
     &--active {
-      @media (min-width: @tablet) {
-        border-bottom: 2px solid @basic-green;
-        padding-bottom: 5px;
-      }
+      border-bottom: 2px solid @basic-green;
+      padding-bottom: 5px;
 
-      @media (min-width: @desktop-min) {
-        border-bottom: 2px solid @basic-white;
+      &-main {
+        @media (min-width: @desktop-min) {
+          border-bottom: 2px solid @basic-white;
+        }
       }
     }
 
@@ -192,10 +195,6 @@
     @media (min-width: @desktop-min) {
       font-size: 20px;
       line-height: 150%;
-
-      &--white {
-        color: @basic-white;
-      }
     }
   }
 
@@ -204,7 +203,9 @@
     color: inherit;
 
     @media (min-width: @desktop-min) {
-      //color: @basic-white;
+      &--inversion {
+        color: @basic-white;
+      }
     }
 
     &:hover {
