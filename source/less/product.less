@@ -6,7 +6,7 @@
   }
 
   &__title {
-    margin-top: 10px;
+    margin-top: 5px;
 
     &--text {
       font-family: "Oswald", "Arial", sans-serif;
@@ -34,7 +34,7 @@
 
   &__options {
     width: 100%;
-    margin-top: 12px;
+    margin-top: 10px;
 
     &-cell {
       font-size: 12px;
@@ -60,9 +60,10 @@
     }
 
     td {
+      padding-top: 1px;
+
       @media (min-width: @tablet) {
         border-bottom: 1px solid @special_grey;
-        padding-top: 6px;
         padding-bottom: 6px;
       }
     }
@@ -85,24 +86,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
 
     @media (min-width: @tablet) {
-      padding-top: 35px;
+      //padding-top: 35px;
+
+      img {
+        width: 168px;
+        height: 200px;
+      }
     }
   }
 
   &__description {
-    width: 250px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+
+
+    @media (min-width: @tablet) {
+      width: 250px;
+      justify-content: center;
+    }
   }
 
   &-more {
-    margin-top: 10px;
+    margin-top: 5px;
 
     & svg {
       margin-left: auto;

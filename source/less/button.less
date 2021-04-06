@@ -2,7 +2,7 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 129%;
   display: flex;
   justify-content: center;
@@ -12,11 +12,13 @@
   height: 39px;
   align-items: center;
   border: none;
+  cursor: pointer;
+  padding: 0;
 
   @media (min-width: @tablet) {
     font-size: 20px;
     line-height: 0;
-    height: 45px;
+    //height: 45px;
   }
 
   &--light {
@@ -28,10 +30,21 @@
   &--color {
     color: @basic-white;
     background-color: @basic-green;
-    margin-top: 12px;
+
+    @media (min-width: @tablet) {
+      height: 38px;
+      margin-top: 25px;
+      line-height: 0;
+    }
 
     @media (min-width: @desktop-min) {
-      height: 52px;
+      margin: 0;
+    }
+  }
+
+  &__extra {
+    @media (min-width: @desktop-min) {
+      width: 245px;
     }
   }
 
@@ -44,7 +57,7 @@
       height: 54px;
 
       font-size: 20px;
-      line-height: 100%
+      line-height: 100%;
     }
 
     @media (min-width: @desktop-min) {

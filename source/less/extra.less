@@ -1,6 +1,15 @@
 .extra {
+  margin-top: 22px;
+
   &__row {
-    margin-top: 9px;
+    margin-top: 13px;
+
+    @media (min-width: @desktop-min) {
+      display: flex;
+      gap: 80px;
+      margin-top: 50px;
+      margin-bottom: 80px;
+    }
   }
 
   &__subtitle {
@@ -31,6 +40,49 @@
 
     @media (min-width: @tablet) {
       font-size: 36px;
+      padding-left: 37px;
+      padding-right: 35px;
+
+      &::after {
+        width: @tablet;
+        left: -30px;
+      }
+    }
+
+    @media (min-width: @desktop-min) {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: -20px;
+
+      &::after {
+        width: @desktop-min;
+        left: -60px;
+      }
+    }
+
+    @media (min-width: @desktop) {
+      padding-left: 50px;
+      padding-right: 40px;
+      margin-left: -50px;
+
+      &::after {
+        width: @desktop;
+        left: -110px;
+      }
+    }
+  }
+
+  &__wrapper {
+    margin-bottom: 15px;
+
+    @media (min-width: @tablet) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media (min-width: @desktop-min) {
+      margin: 0;
+      width: 615px;
     }
   }
 
@@ -38,9 +90,45 @@
     margin: 0;
     padding: 0;
     list-style: none;
-
     display: grid;
-    gap: 32px;
+    gap: 30px;
+
+    @media (min-width: @tablet) {
+      margin-top: 45px;
+      gap: 0;
+      width: 632px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (min-width: @desktop-min) {
+      margin: 0;
+      width: 895px;
+    }
+  }
+
+  &__item {
+    @media (min-width: @tablet) {
+      border: @special_grey 1px solid;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-left: -40px;
+      margin-right: -40px;
+    }
+
+    @media (min-width: @desktop-min) {
+      display: flex;
+      padding-bottom: 11px;
+      padding-top: 20px;
+      padding-left: 0;
+      padding-right: 0;
+      margin: 0;
+      border-left: none;
+      border-right: none;
+      gap: 35px;
+    }
   }
 
   &__title {
@@ -52,11 +140,27 @@
     text-align: start;
     text-transform: uppercase;
     color: @basic-black;
+
+    @media (min-width: @tablet) {
+      min-width: 165px;
+      font-size: 20px;
+      line-height: 100%;
+    }
   }
 
   &__table {
     width: 100%;
     margin-top: 8px;
+
+    @media (min-width: @tablet) {
+      margin-top: 0;
+      width: 230px;
+    }
+
+    @media (min-width: @desktop-min) {
+      margin-top: 5px;
+      width: 290px;
+    }
   }
 
   &__line {
@@ -76,6 +180,23 @@
     text-align: center;
     color: @special_dark-grey;
     padding: 0;
+
+    @media (min-width: @tablet) {
+      font-size: 16px;
+      line-height: 125%;
+    }
+
+    &--quantity {
+      @media (min-width: @tablet) {
+        margin-left: auto;
+        margin-right: 50px;
+      }
+
+      @media (min-width: @desktop-min) {
+        margin-left: 0;
+        margin-right: auto;
+      }
+    }
   }
 
   &__promo {
@@ -83,7 +204,7 @@
     background-image: url(../img/gift-photo-mobile@1x.jpg);
     height: 289px;
     background-repeat: no-repeat;
-    margin-top: 60px;
+    margin-top: 55px;
     position: relative;
 
     &::before {
@@ -98,6 +219,24 @@
       background: url(../img/icon-gift.svg);
       background-size: 55px 60px;
       background-repeat: no-repeat;
+    }
+
+    @media (min-width: @tablet) {
+      background-image: url("../img/gift-photo-tablet@1x.jpg");
+      height: 200px;
+      margin-top: 70px;
+
+      &::before {
+        left: 90px;
+        top: 65px;
+      }
+
+      @media (min-width: @desktop-min) {
+        background-image: url("../img/gift-photo-desktop@1x.jpg");
+        margin-top: 0;
+        height: 289px;
+        width: 245px;
+      }
     }
 
     &-text {
@@ -116,6 +255,22 @@
       width: 155px;
       margin-right: auto;
       margin-left: auto;
+
+      @media (min-width: @tablet) {
+        padding-top: 70px;
+        width: 165px;
+        text-align: start;
+        margin-left: 425px;
+      }
+
+      @media (min-width: @desktop-min) {
+        margin: 0;
+        width: 100%;
+        padding-left: 42px;
+        padding-right: 42px;
+        text-align: center;
+        padding-top: 185px;
+      }
     }
   }
 }

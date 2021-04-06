@@ -2,8 +2,12 @@
   position: relative;
   margin-top: 33px;
 
+  @media (min-width: @tablet) {
+    margin-top: 70px;
+  }
+
   @media (min-width: @desktop-min) {
-    margin-top: 0;
+    margin: 0;
   }
 
   &__form {
@@ -15,7 +19,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 112%;
+    line-height: 125%;
     text-transform: uppercase;
     color: @basic-black;
     width: 50%;
@@ -25,7 +29,6 @@
       font-size: 20px;
       line-height: 125%;
       width: 175px;
-      padding-top: 10px;
     }
 
     @media (min-width: @desktop-min) {
@@ -37,6 +40,8 @@
 
   &__text {
     font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
     font-size: 14px;
     line-height: 143%;
     color: @special_dark-grey;
@@ -44,11 +49,13 @@
     margin: 0;
 
     @media (min-width: @tablet) {
-      width: 150px;
+      width: 160px;
       text-align: end;
       font-style: normal;
       font-weight: normal;
-      padding-top: 10px;
+      font-size: 16px;
+      line-height: 125%;
+      margin-top: -5px;
     }
 
     @media (min-width: @desktop-min) {
@@ -57,13 +64,12 @@
   }
 
   &__street {
-    font-size: 14px;
-    line-height: 143%;
     color: @special_dark-grey;
     margin: 0;
 
     @media (min-width: @tablet) {
-      padding-left: 0;
+      text-align: right;
+      padding: 0;
     }
 
     @media (min-width: @desktop-min) {
@@ -90,7 +96,6 @@
 
     @media (min-width: @tablet) {
       height: 400px;
-      margin-top: 45px;
     }
 
     @media (min-width: @desktop-min) {
@@ -153,11 +158,13 @@
     padding-bottom: 28px;
 
     @media (min-width: @tablet) {
-      height: 201px;
       align-items: center;
       display: flex;
       justify-content: space-between;
-      padding-top: 105px;
+      padding-top: 70px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 53px;
     }
 
     @media (min-width: @desktop-min) {
