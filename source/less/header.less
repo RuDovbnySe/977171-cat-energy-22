@@ -7,7 +7,7 @@
     margin-top: 24px;
   }
 
-  @media (min-width: @desktop-min) {
+  @media (min-width: @desktop) {
     margin-top: 53px;
     margin-bottom: 0;
   }
@@ -25,22 +25,24 @@
     width: 100%;
     align-items: center;
 
-    @media (max-width: @mobile) {
-      margin-top: 12px;
-      margin-bottom: 16px;
-    }
+    &--link {
+      display: flex;
+      width: 100%;
+      align-items: center;
 
-    @media (min-width: @tablet) {
-      width: 174px;
-    }
+      @media (max-width: @mobile) {
+        margin-top: 12px;
+        margin-bottom: 16px;
+      }
 
-    @media (min-width: @desktop-min) {
-      //margin-left: 55px;
-      width: 202px;
-    }
+      @media (min-width: @tablet) {
+        width: 174px;
+      }
 
-    @media (min-width: @desktop) {
-      //margin-left: 110px;
+      @media (min-width: @desktop) {
+        //margin-left: 55px;
+        width: 202px;
+      }
     }
   }
 
@@ -54,7 +56,15 @@
     }
 
     &--title {
-      @media (min-width: @desktop-min) {
+      @media (max-width: @mobile) {
+        margin-left: 55px;
+      }
+
+      @media (max-width: @tablet) {
+        margin-left: 12px;
+      }
+
+      @media (min-width: @desktop) {
         margin-left: 15px;
         width: 118px;
         height: 22px;
@@ -96,7 +106,7 @@
     }
   }
 
-  @media (min-width: @desktop-min) {
+  @media (min-width: @desktop) {
     &__logo {
       &--desktop {
         display: block;
@@ -132,7 +142,7 @@
       width: 440px;
     }
 
-    @media (min-width: @desktop-min) {
+    @media (min-width: @desktop) {
       width: 476px;
     }
 
@@ -152,6 +162,11 @@
     @media (min-width: @tablet) {
       flex-direction: row;
       justify-content: space-between;
+      width: 440px;
+    }
+
+    @media (min-width: @desktop) {
+      width: 470px;
     }
   }
 
@@ -171,7 +186,7 @@
       padding-bottom: 5px;
 
       &-main {
-        @media (min-width: @desktop-min) {
+        @media (min-width: @desktop) {
           border-bottom: 2px solid @basic-white;
         }
       }
@@ -192,7 +207,7 @@
       line-height: 133%;
     }
 
-    @media (min-width: @desktop-min) {
+    @media (min-width: @desktop) {
       font-size: 20px;
       line-height: 150%;
     }
@@ -202,7 +217,7 @@
     text-decoration: none;
     color: inherit;
 
-    @media (min-width: @desktop-min) {
+    @media (min-width: @desktop) {
       &--inversion {
         color: @basic-white;
       }
@@ -220,7 +235,7 @@
       border-bottom: 2px solid @basic-green;
       opacity: 1;
 
-      @media (min-width: @desktop-min) {
+      @media (min-width: @desktop) {
         border-bottom: 2px solid @basic-white;
       }
     }

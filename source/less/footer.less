@@ -28,7 +28,7 @@
 
     @media (min-width: @tablet) {
       padding-bottom: 60px;
-      padding-top: 66px;
+      padding-top: 60px;
     }
   }
 
@@ -87,6 +87,10 @@
 
   & svg {
     margin-top: -10px;
+
+    @media (min-width: @desktop) {
+      margin-top: 0;
+    }
   }
 
   @media (min-width: @tablet) {
@@ -102,6 +106,10 @@
     @media (min-width: @tablet) {
       margin-right: 22px;
       align-self: center;
+    }
+
+    @media (min-width: @desktop) {
+      margin-right: 15px;
     }
   }
 }
