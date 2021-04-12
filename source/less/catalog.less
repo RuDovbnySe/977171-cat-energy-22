@@ -15,7 +15,7 @@
       margin-bottom: 0;
     }
 
-    @media (min-width: @desktop-min) {
+    @media (min-width: @desktop) {
       margin-top: 70px;
     }
   }
@@ -26,13 +26,15 @@
 
     @media (min-width: @tablet) {
       grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      margin-top: 95px;
+      column-gap: 60px;
+      row-gap: 90px;
+      margin-top: 115px;
     }
 
-    @media (min-width: @desktop-min) {
+    @media (min-width: @desktop) {
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 80px;
+      column-gap: 80px;
+      row-gap: 95px;
     }
   }
 
@@ -42,8 +44,16 @@
 
     @media (min-width: @tablet) {
       margin-top: 0;
-      height: 503px;
-      background: linear-gradient(to bottom, @basic-white 13%, @basic-grey 13%, @basic-grey 100%);
+      height: 480px;
+      background: linear-gradient(to bottom, @basic-white 10%, @basic-grey 10%, @basic-grey 100%);
+
+      &--more {
+        background: inherit;
+      }
+
+      @media (min-width: @desktop) {
+        width: 245px;
+      }
     }
   }
 
