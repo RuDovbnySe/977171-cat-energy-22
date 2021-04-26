@@ -32,7 +32,7 @@
 
       @media (max-width: @mobile) {
         margin-top: 12px;
-        margin-bottom: 16px;
+        margin-bottom: 12px;
       }
 
       @media (min-width: @tablet) {
@@ -151,7 +151,8 @@
     }
 
     @media (min-width: @desktop) {
-      width: 476px;
+      width: 485px;
+      margin-top: -8px;
     }
 
     &--show {
@@ -171,10 +172,11 @@
       flex-direction: row;
       justify-content: space-between;
       width: 440px;
+      margin-top: 15px;
     }
 
     @media (min-width: @desktop) {
-      width: 470px;
+      width: 480px;
     }
   }
 
@@ -223,9 +225,25 @@
 
   &__link {
     text-decoration: none;
-    color: inherit;
+    //color: inherit;
+
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: @basic-black;
+
+    @media (min-width: @tablet) {
+      font-size: 18px;
+      line-height: 133%;
+    }
 
     @media (min-width: @desktop) {
+      font-size: 20px;
+      line-height: 150%;
+
       &--inversion {
         color: @basic-white;
       }
