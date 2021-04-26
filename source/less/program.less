@@ -1,11 +1,11 @@
 .program {
-  margin-top: 40px;
+  margin-top: 30px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
 
   @media (min-width: @tablet) {
-    margin-top: 60px;
+    margin-top: 65px;
   }
 
   @media (min-width: @desktop) {
@@ -63,7 +63,7 @@
   padding-bottom: 10px;
 
   @media (min-width: @tablet) {
-    padding-top: 39px;
+    padding-top: 42px;
   }
 
   &__form {
@@ -150,8 +150,22 @@
       }
     }
 
+    &:hover {
+      .cat__form--control {
+        border: 1px solid @special_grey;
+      }
+    }
+
+    &:focus {
+      .cat__form--control {
+        border: 1px solid @special_dark-grey;
+      }
+    }
+
     &:invalid {
-      border: 1px solid @status-error;
+      .cat__form--control {
+        border: 1px solid @status-error;
+      }
     }
   }
 
@@ -260,7 +274,7 @@
     margin-left: 10px;
 
     @media (min-width: @tablet) {
-      margin-left: 25px;
+      margin-left: 22px;
     }
   }
 
@@ -363,13 +377,20 @@
     display: flex;
     align-items: center;
 
-    @media (min-width: @tablet) {
-      margin-bottom: 10px;
+    &:hover {
+      .contact__form--control {
+        border: 2px solid @special_grey;
+      }
+
+      line,
+      path {
+        stroke: @special_dark-grey-2;
+      }
     }
 
-    &:hover {
-      &--control {
-        border: 1px solid @special_grey;
+    &:focus {
+      .contact__form--control {
+        border: 2px solid @special_dark-grey;
       }
 
       line,
@@ -379,8 +400,8 @@
     }
 
     &:active {
-      &--control {
-        border: 1px solid @special_dark-grey;
+      .contact__form--control {
+        border: 2px solid @special_dark-grey;
       }
 
       line,
@@ -390,14 +411,19 @@
     }
 
     &:invalid {
-      &--control {
-        border: 1px solid @status-error;
+      .contact__form--control {
+        border: 2px solid @status-error;
       }
 
       line,
       path {
         stroke: @status-error;
       }
+    }
+
+
+    @media (min-width: @tablet) {
+      margin-bottom: 10px;
     }
 
     &--text {
@@ -429,28 +455,13 @@
       padding-top: 14px;
       padding-bottom: 12px;
       padding-left: 15px;
+      border-radius: 0;
 
       @media (min-width: @tablet) {
         font-size: 20px;
         line-height: 150%;
         padding-top: 5px;
         padding-bottom: 10px;
-      }
-
-      //&::placeholder {
-      //  color: @special_dark-grey;
-      //}
-
-      &:hover {
-        border: 2px solid @special_grey;
-      }
-
-      &:focus {
-        border: 2px solid @special_dark-grey;
-      }
-
-      &:invalid {
-        //border: 2px solid @status-error;
       }
     }
 
