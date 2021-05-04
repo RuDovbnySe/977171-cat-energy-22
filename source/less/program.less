@@ -148,6 +148,10 @@
       &::placeholder {
         color: @special_dark-grey;
       }
+
+      &:invalid {
+        border: 1px solid @status-error;
+      }
     }
 
     &:hover {
@@ -159,12 +163,6 @@
     &:focus {
       input {
         border: 1px solid @special_dark-grey;
-      }
-    }
-
-    &:invalid {
-      input {
-        border: 1px solid @status-error;
       }
     }
   }
@@ -379,7 +377,7 @@
 
     &:hover {
       input {
-        border: 2px solid @special_grey;
+        border: 1px solid @special_grey;
       }
 
       line,
@@ -391,7 +389,7 @@
 
     &:focus {
       input {
-        border: 2px solid @special_dark-grey;
+        border: 1px solid @special_dark-grey;
       }
 
       line,
@@ -403,7 +401,7 @@
 
     &:active {
       input {
-        border: 2px solid @special_dark-grey;
+        border: 1px solid @special_dark-grey;
       }
 
       line,
@@ -411,18 +409,6 @@
         stroke: @basic-green;
       }
     }
-
-    &:invalid {
-      input {
-        border: 2px solid @status-error;
-      }
-
-      line,
-      path {
-        stroke: @status-error;
-      }
-    }
-
 
     @media (min-width: @tablet) {
       margin-bottom: 10px;
@@ -458,6 +444,7 @@
       padding-bottom: 12px;
       padding-left: 15px;
       border-radius: 0;
+      border: 1px solid @form-border;
 
       @media (min-width: @tablet) {
         font-size: 20px;
@@ -478,11 +465,33 @@
 
     &--mail {
       width: inherit;
+
+      &:invalid {
+        border: 1px solid @status-error;
+
+        & + svg {
+          line,
+          path {
+            stroke: @status-error;
+          }
+        }
+      }
     }
 
     &--phone {
       width: inherit;
       margin-left: 10px;
+
+      &:invalid {
+        border: 1px solid @status-error;
+
+        & + svg {
+          path {
+            stroke: @status-error;
+            fill: @status-error;
+          }
+        }
+      }
     }
   }
 }
