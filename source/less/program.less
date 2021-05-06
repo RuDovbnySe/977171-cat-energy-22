@@ -148,10 +148,10 @@
       &::placeholder {
         color: @special_dark-grey;
       }
+    }
 
-      &:invalid {
-        border: 1px solid @status-error;
-      }
+    &--error {
+      border: 1px solid @status-error;
     }
 
     &:hover {
@@ -463,17 +463,28 @@
       }
     }
 
+    &--svg-error {
+      path {
+        //fill: @status-error;
+        stroke: @status-error;
+      }
+
+      line {
+        stroke: @status-error;
+      }
+    }
+
+    &--error {
+      border: 1px solid @status-error;
+    }
+
     &--mail {
       width: inherit;
 
-      &:invalid {
-        border: 1px solid @status-error;
-
-        & + svg {
-          line,
-          path {
-            stroke: @status-error;
-          }
+      &-svg-error {
+        path,
+        line {
+          stroke: @status-error;
         }
       }
     }
@@ -482,14 +493,14 @@
       width: inherit;
       margin-left: 10px;
 
-      &:invalid {
-        border: 1px solid @status-error;
+      &-svg-error {
+        path {
+          fill: @status-error;
+          stroke: @status-error;
+        }
 
-        & + svg {
-          path {
-            stroke: @status-error;
-            fill: @status-error;
-          }
+        line {
+          stroke: @status-error;
         }
       }
     }
