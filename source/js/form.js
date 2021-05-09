@@ -29,17 +29,18 @@ const validateFormContactPhone = (i) => {
     validPhone = false;
   }
 }
-const validateMailSvg = (i) => {
-
-  if (validMiil === false) {
-    i.classList.add('contact__form--mail-svg-error');
-  }
-}
 
 const validatePhoneSvg = (i) => {
 
   if (validPhone === false) {
     i.classList.add('contact__form--phone-svg-error');
+  }
+}
+
+const validateMailSvg = (i) => {
+
+  if (validMiil === false) {
+    i.classList.add('contact__form--mail-svg-error');
   }
 }
 
