@@ -18,18 +18,18 @@ const validateFormCat = (i) => {
   }
 }
 
+const validatePhoneSvg = (i) => {
+
+  if (validPhone === false) {
+    i.classList.add('contact__form--phone-svg-error');
+  }
+}
+
 const validateFormContactMail = (i) => {
   if (i.value === '') {
     i.classList.add('contact__form--error');
 
     validMail = false;
-  }
-}
-
-const validatePhoneSvg = (i) => {
-
-  if (validPhone === false) {
-    i.classList.add('contact__form--phone-svg-error');
   }
 }
 
