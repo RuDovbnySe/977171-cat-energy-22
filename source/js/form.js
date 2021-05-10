@@ -6,9 +6,7 @@ const contactPhone = document.querySelector('.contact__form--phone');
 const mailSvg = document.querySelector('.contact__form--mail-svg');
 const phoneSvg = document.querySelector('.contact__form--phone-svg');
 const send = document.querySelector('.button--form');
-
-var validMail = true;
-
+var validMiil = true;
 var validPhone = true;
 
 const validateFormCat = (i) => {
@@ -18,18 +16,10 @@ const validateFormCat = (i) => {
   }
 }
 
-const validatePhoneSvg = (i) => {
-
-  if (validPhone === false) {
-    i.classList.add('contact__form--phone-svg-error');
-  }
-}
-
 const validateFormContactMail = (i) => {
   if (i.value === '') {
     i.classList.add('contact__form--error');
-
-    validMail = false;
+    validMiil = false;
   }
 }
 
@@ -40,9 +30,16 @@ const validateFormContactPhone = (i) => {
   }
 }
 
+const validatePhoneSvg = (i) => {
+
+  if (validPhone === false) {
+    i.classList.add('contact__form--phone-svg-error');
+  }
+}
+
 const validateMailSvg = (i) => {
 
-  if (validMail === false) {
+  if (validMiil === false) {
     i.classList.add('contact__form--mail-svg-error');
   }
 }
