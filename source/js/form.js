@@ -26,13 +26,6 @@ const validateFormContactMail = (i) => {
   }
 }
 
-const validateFormContactPhone = (i) => {
-  if (i.value === '') {
-    i.classList.add('contact__form--error');
-    validPhone = false;
-  }
-}
-
 const validatePhoneSvg = (i) => {
 
   if (validPhone === false) {
@@ -40,8 +33,15 @@ const validatePhoneSvg = (i) => {
   }
 }
 
+const validateFormContactPhone = (i) => {
+  if (i.value === '') {
+    i.classList.add('contact__form--error');
+    validPhone = false;
+  }
+}
+
 const validateMailSvg = (i) => {
-  
+
   if (validMail === false) {
     i.classList.add('contact__form--mail-svg-error');
   }
