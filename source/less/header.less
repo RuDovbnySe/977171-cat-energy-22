@@ -7,7 +7,7 @@
     margin-top: 24px;
   }
 
-  @media (min-width: @desktop-min) {
+  @media (min-width: @desktop) {
     margin-top: 53px;
     margin-bottom: 0;
   }
@@ -25,21 +25,32 @@
     width: 100%;
     align-items: center;
 
-    @media (max-width: @mobile) {
-      margin-top: 12px;
-      margin-bottom: 16px;
-    }
+    &--link {
+      display: flex;
+      width: 100%;
+      align-items: center;
 
-    @media (min-width: @tablet) {
-      width: 174px;
-    }
+      @media (max-width: @mobile) {
+        margin-top: 12px;
+        margin-bottom: 12px;
+      }
 
-    @media (min-width: @desktop-min) {
-      //margin-left: 55px;
-    }
+      @media (min-width: @tablet) {
+        width: 174px;
+      }
 
-    @media (min-width: @desktop) {
-      //margin-left: 110px;
+      @media (min-width: @desktop) {
+        //margin-left: 55px;
+        width: 202px;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &:active {
+        opacity: 0.6;
+      }
     }
   }
 
@@ -53,7 +64,15 @@
     }
 
     &--title {
-      @media (min-width: @desktop-min) {
+      @media (max-width: @mobile) {
+        margin-left: 55px;
+      }
+
+      @media (min-width: @tablet) {
+        margin-left: 12px;
+      }
+
+      @media (min-width: @desktop) {
         margin-left: 15px;
         width: 118px;
         height: 22px;
@@ -95,7 +114,7 @@
     }
   }
 
-  @media (min-width: @desktop-min) {
+  @media (min-width: @desktop) {
     &__logo {
       &--desktop {
         display: block;
@@ -112,6 +131,7 @@
   &__toggle--close {
     border: none;
     background-color: inherit;
+    width: 36px;
 
     @media (min-width: @tablet) {
       display: none;
@@ -130,8 +150,9 @@
       width: 440px;
     }
 
-    @media (min-width: @desktop-min) {
-      width: 476px;
+    @media (min-width: @desktop) {
+      width: 485px;
+      margin-top: -8px;
     }
 
     &--show {
@@ -140,15 +161,23 @@
   }
 }
 
-.site-list {
-  display: flex;
-  flex-direction: column;
-  padding-left: 0;
-  margin: 0;
+.nav {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin: 0;
 
-  @media (min-width: @tablet) {
-    flex-direction: row;
-    justify-content: space-between;
+    @media (min-width: @tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 440px;
+      margin-top: 15px;
+    }
+
+    @media (min-width: @desktop) {
+      width: 480px;
+    }
   }
 
   &__item {
@@ -160,17 +189,16 @@
     font-size: 20px;
     line-height: 100%;
     text-transform: uppercase;
-
     color: @basic-black;
 
     &--active {
-      @media (min-width: @tablet) {
-        border-bottom: 2px solid @basic-green;
-        padding-bottom: 5px;
-      }
+      border-bottom: 2px solid @basic-green;
+      padding-bottom: 5px;
 
-      @media (min-width: @desktop-min) {
-        border-bottom: 2px solid @basic-white;
+      &-main {
+        @media (min-width: @desktop) {
+          border-bottom: 2px solid @basic-white;
+        }
       }
     }
 
@@ -189,39 +217,44 @@
       line-height: 133%;
     }
 
-    @media (min-width: @desktop-min) {
+    @media (min-width: @desktop) {
       font-size: 20px;
       line-height: 150%;
-
-      &--white {
-        color: @basic-white;
-      }
     }
   }
 
   &__link {
     text-decoration: none;
-    color: inherit;
+    //color: inherit;
 
-    @media (min-width: @desktop-min) {
-      //color: @basic-white;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: @basic-black;
+
+    @media (min-width: @tablet) {
+      font-size: 18px;
+      line-height: 133%;
+    }
+
+    @media (min-width: @desktop) {
+      font-size: 20px;
+      line-height: 150%;
+
+      &--inversion {
+        color: @basic-white;
+      }
     }
 
     &:hover {
       opacity: 0.6;
     }
 
-    &:focus {
-      opacity: 0.3;
-    }
-
     &:active {
-      border-bottom: 2px solid @basic-green;
-      opacity: 1;
-
-      @media (min-width: @desktop-min) {
-        border-bottom: 2px solid @basic-white;
-      }
+      opacity: 0.3;
     }
   }
 }

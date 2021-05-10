@@ -9,6 +9,13 @@
 
   &__item {
     list-style: none;
+
+    @media (min-width: @tablet) {
+      svg {
+        width: 32px;
+        height: 22px;
+      }
+    }
   }
 }
 
@@ -27,7 +34,25 @@
     }
 
     @media (min-width: @tablet) {
-      padding-bottom: 61px;
+      padding-bottom: 60px;
+      padding-top: 60px;
+    }
+
+
+    :hover {
+      opacity: 0.8;
+
+      path {
+        fill: @basic-green;
+      }
+    }
+
+    :active {
+      opacity: 0.6;
+
+      path {
+        fill: @basic-green;
+      }
     }
   }
 
@@ -86,6 +111,10 @@
 
   & svg {
     margin-top: -10px;
+
+    @media (min-width: @desktop) {
+      margin-top: 0;
+    }
   }
 
   @media (min-width: @tablet) {
@@ -101,6 +130,13 @@
     @media (min-width: @tablet) {
       margin-right: 22px;
       align-self: center;
+      font-weight: 500;
+      margin-top: -10px;
+    }
+
+    @media (min-width: @desktop) {
+      margin-right: 25px;
+      margin-top: 3px;
     }
   }
 }

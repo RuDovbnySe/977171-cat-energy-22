@@ -1,22 +1,22 @@
-var open = document.querySelector(".header__toggle");
-var navigation = document.querySelector(".header__nav");
-var close = document.querySelector(".header__toggle--close");
+const open = document.querySelector('.header__toggle');
+const navigation = document.querySelector('.header__nav');
+const close = document.querySelector('.header__toggle--close');
 
 
-open.addEventListener("click", function (evt) {
+open.addEventListener('click', function (evt) {
   evt.preventDefault();
-  console.log("Клик - Открывает меню");
-  navigation.classList.add("header__nav--show");
-  open.classList.add("visually-hidden");
-  close.classList.remove("visually-hidden");
+  console.log('Клик - Открывает меню');
+  navigation.classList.add('header__nav--show');
+  open.classList.add('visually-hidden');
+  close.classList.remove('visually-hidden');
 });
 
-close.addEventListener("click", function (evt) {
+close.addEventListener('click', function (evt) {
   evt.preventDefault();
-  console.log("Клик - закрывает меню");
-  navigation.classList.remove("header__nav--show");
-  close.classList.add("visually-hidden");
-  open.classList.remove("visually-hidden");
+  console.log('Клик - закрывает меню');
+  navigation.classList.remove('header__nav--show');
+  close.classList.add('visually-hidden');
+  open.classList.remove('visually-hidden');
 })
 
 

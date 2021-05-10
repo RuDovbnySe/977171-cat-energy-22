@@ -12,7 +12,7 @@
 <header class="header">
   <div class="container header__wrapper">
     <div class="header__top">
-      <a class="header__top--link">
+      <a class="header__top--link" href="index.html">
         <svg class="header__logo header__logo--mobile" width="34" height="38" viewBox="0 0 34 38" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
             <path
@@ -158,8 +158,7 @@
             d="M25.9313 27.774C25.9313 27.774 22.1211 26.3457 20.721 25.9588C20.0636 25.6735 19.3377 25.5808 18.6289 25.6915C17.9201 25.8023 17.258 26.1118 16.7208 26.5837C16.1728 27.0597 15.7346 27.6471 15.4361 28.3061C15.1375 28.9651 14.9856 29.6802 14.9907 30.4027C15.2021 30.8637 15.3631 31.3459 15.4708 31.841C15.5208 32.3171 14.2707 32.2675 13.4707 32.2675C12.6706 32.2675 12.5506 30.8391 13.1807 29.1627C13.6722 27.8737 14.2814 26.632 15.0007 25.4529C9.55047 28.27 0 34.7771 0 34.7771C2.73182 34.6137 5.47292 34.6933 8.1904 35.0151C13.4407 35.5409 13.1907 39.6474 13.1907 39.6474C15.0373 39.1425 16.9192 38.7745 18.8209 38.5464C20.941 38.4075 21.091 40.6493 21.091 40.6493L21.6211 44.4781C22.4259 43.6145 23.3134 42.8305 24.2712 42.1372C25.5057 41.157 27.0776 40.6942 28.6514 40.8477L25.9313 27.774Z"
             fill="#F06351"/>
         </svg>
-      </a>
-      <svg class="header__logo header__logo--title" width="102" height="20" viewBox="0 0 102 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="header__logo header__logo--title" width="102" height="20" viewBox="0 0 102 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M1.78992 17.4945C0.902539 16.1681 0.478241 14.5814 0.583977 12.9848V6.46795C0.472038 4.85958 0.889922 3.25895 1.77269 1.91483C2.5709 0.877922 3.93477 0.362366 5.86427 0.368159C7.79377 0.373952 9.10021 0.828685 9.78358 1.73236C10.6168 2.85221 11.0234 4.23682 10.9292 5.63379V7.16309H7.36308V5.50346C7.35827 5.06678 7.32084 4.63108 7.2511 4.20008C7.20799 3.88807 7.06596 3.59849 6.84625 3.37461C6.71061 3.25728 6.55315 3.16841 6.38306 3.11321C6.21297 3.05801 6.03367 3.03757 5.85565 3.05311C5.6 3.01462 5.3388 3.05654 5.10761 3.17315C4.87641 3.28976 4.68645 3.47539 4.56357 3.7048C4.33709 4.31502 4.2374 4.9657 4.27071 5.61642V13.8885C4.23141 14.5435 4.34653 15.1986 4.60665 15.8001C4.73093 16.0171 4.91535 16.1927 5.13724 16.3054C5.35914 16.4181 5.60884 16.463 5.85565 16.4344C6.09818 16.469 6.34535 16.4255 6.5619 16.31C6.77846 16.1946 6.95333 16.0131 7.06159 15.7914C7.26996 15.1801 7.36059 14.5342 7.32862 13.8885V12.1507H10.8948V13.6539C10.9997 15.0715 10.6263 16.4832 9.83526 17.6596C9.07724 18.6154 7.76793 19.0846 5.90734 19.0846C4.04675 19.0846 2.59101 18.5633 1.78992 17.4945Z"
           fill="#111111"/>
@@ -187,6 +186,7 @@
           d="M95.7113 12.4113L91.8093 0.62014H94.1522L96.9173 9.41358L99.6393 0.62014H102.008L98.1318 12.4113V18.8413H95.72L95.7113 12.4113Z"
           fill="#444444"/>
       </svg>
+      </a>
       <button class="header__toggle" type="button">
         <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
@@ -204,16 +204,16 @@
       </button>
     </div>
     <nav class="header__nav">
-      <div class="header__nav--wrapper">
-        <ul class="header__nav--list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
+      <div class="header__nav--wrapper nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+          <li class="nav__item">
+            <a class="nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link">Подбор программы</a>
+          <li class="nav__item nav__item--active">
+            <a class="nav__link">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -233,15 +233,15 @@
             <fieldset class="cat__wrapper cat__wrapper--input">
               <label class="cat__form">
                 <span class="cat__form--text cat__form--name">Имя:*</span>
-                <input class="cat__form--control" type="text" placeholder="Барсик" required>
+                <input class="cat__form--control cat__form--control-name" type="text" placeholder="Барсик" required>
               </label>
               <label class="cat__form">
                 <span class="cat__form--text cat__form--weight">Вес (кг):*</span>
-                <input class="cat__form--control" type="text" placeholder="7" required>
+                <input class="cat__form--control cat__form--control-weight" type="text" placeholder="7" required>
               </label>
               <label class="cat__form">
                 <span class="cat__form--text cat__form--age">Возраст (лет):</span>
-                <input class="cat__form--control" type="text" placeholder="7">
+                <input class="cat__form--control cat__form--control-age" type="text" placeholder="7" required>
               </label>
             </fieldset>
           </div>
@@ -254,21 +254,21 @@
                   <label class="radio__label" for="radio-1" tabindex="0">
                     <input class="radio__input" type="radio" id="radio-1" name="choice" checked>
                     <span class="radio__box"></span>
-                    Похудение
+                    <span class="radio__text">Похудение</span>
                   </label>
                 </div>
                 <div class="radio__column">
                   <label class="radio__label" for="radio-2" tabindex="0">
                     <input class="radio__input" type="radio" id="radio-2" name="choice">
                     <span class="radio__box"></span>
-                    Набор массы
+                    <span class="radio__text">Набор массы</span>
                   </label>
                 </div>
                 <div class="radio__column">
                   <label class="radio__label" for="radio-3" tabindex="0">
                     <input class="radio__input" type="radio" id="radio-3" name="choice" disabled>
                     <span class="radio__box"></span>
-                    Не знаю (Нужен ваш совет)
+                    <span class="radio__text">Не знаю (Нужен ваш совет)</span>
                   </label>
                 </div>
               </div>
@@ -288,7 +288,7 @@
                 <label class="contact__form">
                   <span class="contact__form--text">E-mail:*</span>
                   <input class="contact__form--control contact__form--mail" type="email" placeholder="kuklachev@gmail.com" required>
-                  <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="contact__form--mail-svg" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line x1="1.65" y1="5.71997" x2="1.65" y2="13.72" stroke="#222222" stroke-width="1.3"/>
                     <line x1="18.65" y1="5.71997" x2="18.65" y2="13.72" stroke="#222222" stroke-width="1.3"/>
                     <line x1="1" y1="13.07" x2="19" y2="13.07" stroke="#222222" stroke-width="1.3"/>
@@ -302,8 +302,8 @@
                 <label class="contact__form">
                   <span class="contact__form--text">Телефон:*</span>
                   <input class="contact__form--control contact__form--phone" type="tel" placeholder="8 (960) 900-60-90" required>
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0)">
+                  <svg class="contact__form--phone-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip1)">
                       <path
                         d="M17.9 9.4H9.39999V10.6H17.9L15.8 12.7L16.7 13.6L19.8 10.5C19.8974 10.3702 19.95 10.2123 19.95 10.05C19.95 9.88772 19.8974 9.72982 19.8 9.6L16.7 6.5L15.8 7.4L17.9 9.4Z"
                         fill="black"/>
@@ -312,7 +312,7 @@
                         fill="black"/>
                     </g>
                     <defs>
-                      <clipPath id="clip0">
+                      <clipPath id="clip1">
                         <rect width="20" height="20" fill="white"/>
                       </clipPath>
                     </defs>
@@ -367,7 +367,7 @@
         <div class="container container-form">
           <div class="send__wrapper">
             <div class="send__column">
-              <button class="button button--color">Отправить заявку</button>
+              <button class="button button--color button--form">Отправить заявку</button>
             </div>
             <div class="send__column">
               <p class="send__text"><sup>*</sup>— Обязательные поля</p>
@@ -379,7 +379,7 @@
   </div>
   <section class="invitation invitation__form">
     <div class="container invitation__box container-form">
-      <h2 class="invitation__title">Приглашаем к сотрудничеству дилеров!</h2>
+      <h2 class="invitation__title">Приглашаем <br>к сотрудничеству дилеров!</h2>
       <div class="invitation__text">
         <p class="invitation__street">ул. Большая Конюшенная, д. 19/8</p>
         <p class="invitation__city">Санкт-Петербург</p>
@@ -447,5 +447,6 @@
   </div>
 </footer>
 <script src="js/script.js"></script>
+<script src="js/form.js"></script>
 </body>
 </html>
