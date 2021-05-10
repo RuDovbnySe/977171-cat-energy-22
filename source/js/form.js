@@ -7,7 +7,7 @@ const mailSvg = document.querySelector('.contact__form--mail-svg');
 const phoneSvg = document.querySelector('.contact__form--phone-svg');
 const send = document.querySelector('.button--form');
 
-var validMaiil = true;
+var validMail = true;
 
 var validPhone = true;
 
@@ -22,7 +22,7 @@ const validateFormContactMail = (i) => {
   if (i.value === '') {
     i.classList.add('contact__form--error');
 
-    validMaiil = false;
+    validMail = false;
   }
 }
 
@@ -41,8 +41,8 @@ const validatePhoneSvg = (i) => {
 }
 
 const validateMailSvg = (i) => {
-
-  if (validMaiil === false) {
+  
+  if (validMail === false) {
     i.classList.add('contact__form--mail-svg-error');
   }
 }
