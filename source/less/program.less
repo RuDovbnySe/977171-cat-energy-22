@@ -1,6 +1,6 @@
 .program {
   margin-top: 30px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Oswald regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
 
@@ -73,6 +73,40 @@
     padding-bottom: 6px;
     height: 52px;
 
+    @media (min-width: @tablet) {
+      height: 57px;
+    }
+
+    &:hover {
+      input {
+        border: 1px solid @special_grey;
+      }
+    }
+
+    &:focus {
+      input {
+        border: 1px solid @special_dark-grey;
+      }
+    }
+  }
+
+  &__banner {
+    &--text {
+      font-family: "Oswald regular", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 112%;
+      text-transform: uppercase;
+      align-self: center;
+      color: @special_dark-grey;
+
+      @media (min-width: @tablet) {
+        font-size: 20px;
+        line-height: 150%;
+      }
+    }
+
     &--name {
       width: 55px;
       margin-right: 5px;
@@ -103,29 +137,11 @@
         margin-right: 19px;
       }
     }
+  }
 
-    @media (min-width: @tablet) {
-      height: 57px;
-    }
-
-    &--text {
-      font-family: "Oswald", "Arial", sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 112%;
-      text-transform: uppercase;
-      align-self: center;
-      color: @special_dark-grey;
-
-      @media (min-width: @tablet) {
-        font-size: 20px;
-        line-height: 150%;
-      }
-    }
-
+  &__area {
     &--control {
-      font-family: "Oswald", "Arial", sans-serif;
+      font-family: "Oswald regular", "Arial", sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
@@ -152,18 +168,6 @@
 
     &--error {
       border: 1px solid @status-error;
-    }
-
-    &:hover {
-      input {
-        border: 1px solid @special_grey;
-      }
-    }
-
-    &:focus {
-      input {
-        border: 1px solid @special_dark-grey;
-      }
     }
   }
 
@@ -277,7 +281,7 @@
   }
 
   &__label {
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: "Oswald regular", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -321,7 +325,7 @@
     position: absolute;
     border-bottom: 2px solid @basic-green;
     height: 2px;
-    width: 100px;
+    width: 50%;
     top: 12px;
     z-index: -1;
     right: 0;
@@ -333,19 +337,19 @@
   }
 
   &__tittle {
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: "Oswald regular", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 108%;
     color: @basic-black;
-    width: 187px;
+    width: 197px;
+    background-color: @basic-white;
 
     @media (min-width: @tablet) {
       font-size: 36px;
       line-height: 100%;
       width: 593px;
-      background-color: @basic-white;
       margin-left: -39px;
       padding-left: 39px;
     }
@@ -414,55 +418,6 @@
       margin-bottom: 10px;
     }
 
-    &--text {
-      font-family: "Oswald", "Arial", sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 112%;
-      text-transform: uppercase;
-      color: @special_dark-grey;
-      width: auto;
-      min-width: 65px;
-
-      @media (min-width: @tablet) {
-        font-size: 20px;
-        line-height: 150%;
-        margin-right: 20px;
-      }
-    }
-
-    &--control {
-      font-family: "Oswald", "Arial", sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 112%;
-      text-transform: uppercase;
-      color: @special_dark-grey;
-      padding-top: 14px;
-      padding-bottom: 12px;
-      padding-left: 15px;
-      border-radius: 0;
-      border: 1px solid @form-border;
-
-      @media (min-width: @tablet) {
-        font-size: 20px;
-        line-height: 150%;
-        padding-top: 5px;
-        padding-bottom: 10px;
-      }
-    }
-
-    svg {
-      position: absolute;
-      right: 15px;
-
-      @media (min-width: @tablet) {
-        right: 20px;
-      }
-    }
-
     &--svg-error {
       path {
         //fill: @status-error;
@@ -473,11 +428,50 @@
         stroke: @status-error;
       }
     }
+  }
+
+  &__banner {
+    font-family: "Oswald regular", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 112%;
+    text-transform: uppercase;
+    color: @special_dark-grey;
+    width: auto;
+    min-width: 65px;
+
+    @media (min-width: @tablet) {
+      font-size: 20px;
+      line-height: 150%;
+      margin-right: 20px;
+    }
+  }
+
+  &__area {
+    font-family: "Oswald regular", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 112%;
+    text-transform: uppercase;
+    color: @special_dark-grey;
+    padding-top: 14px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    border-radius: 0;
+    border: 1px solid @form-border;
+
+    @media (min-width: @tablet) {
+      font-size: 20px;
+      line-height: 150%;
+      padding-top: 5px;
+      padding-bottom: 10px;
+    }
 
     &--error {
       border: 1px solid @status-error;
     }
-
     &--mail {
       width: inherit;
 
@@ -505,6 +499,19 @@
       }
     }
   }
+
+  &__svg {
+    position: absolute;
+    right: 15px;
+
+    @media (min-width: @tablet) {
+      right: 20px;
+    }
+
+    &--error {
+      border: 1px solid @status-error;
+    }
+  }
 }
 
 .commentary {
@@ -521,7 +528,7 @@
     position: absolute;
     border-bottom: 2px solid @basic-green;
     height: 2px;
-    width: 160px;
+    width: 60%;
     top: 40px;
     z-index: -1;
     right: 0;
@@ -549,7 +556,7 @@
   }
 
   &__tittle {
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: "Oswald regular", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -557,6 +564,7 @@
     color: @basic-black;
     width: 50%;
     padding-bottom: 38px;
+    background-color: @basic-white;
 
     @media (min-width: @tablet) {
       font-size: 36px;
@@ -568,7 +576,7 @@
   }
 
   &__text {
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: "Oswald regular", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -606,12 +614,14 @@
   }
 
   &__tittle {
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: "Oswald regular", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 108%;
     color: #000000;
+    width: 165px;
+    background-color: @basic-white;
 
     @media (min-width: @tablet) {
       font-size: 36px;
@@ -628,7 +638,7 @@
     position: absolute;
     border-bottom: 2px solid @basic-green;
     height: 2px;
-    width: 135px;
+    width: 50%;
     top: 15px;
     z-index: -1;
     right: 0;
@@ -697,7 +707,7 @@
   }
 
   &__label {
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: "Oswald regular", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -753,7 +763,7 @@
     padding-top: 25px;
     text-align: center;
 
-    font-family: "Arial", sans-serif;
+    font-family: "Arial", "Helvetica", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;

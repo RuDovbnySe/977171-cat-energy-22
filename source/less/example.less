@@ -15,17 +15,8 @@
     }
   }
 
-  &__comparison--img {
-    @media (min-width: @tablet) {
-      display: flex;
-      flex-wrap: nowrap;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-
   &__tittle {
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: "Oswald regular", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -41,7 +32,7 @@
   }
 
   &__text {
-    font-family: "Arial", sans-serif;
+    font-family: "Arial", "Helvetica", sans-serif;
     font-size: 14px;
     line-height: 129%;
     color: @special_dark-grey;
@@ -128,7 +119,7 @@
   }
 
   &__total {
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: "Oswald regular", "Arial", sans-serif;
     font-size: 24px;
     line-height: 100%;
     text-align: center;
@@ -160,7 +151,7 @@
   }
 
   &__expenses {
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: "Oswald regular", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -217,7 +208,7 @@
 }
 
 .result__total--expenses {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Oswald regular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 143%;
   text-align: center;
@@ -235,6 +226,15 @@
 
   @media (min-width: @desktop) {
     margin-top: 0;
+  }
+
+  &__box {
+    @media (min-width: @tablet) {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__img {
@@ -281,7 +281,7 @@
   }
 
   &__button {
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: "Oswald regular", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;

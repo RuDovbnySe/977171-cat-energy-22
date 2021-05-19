@@ -1,5 +1,6 @@
 .extra {
   margin-top: 22px;
+  position: relative;
 
   @media (min-width: @tablet) {
     margin-top: 70px;
@@ -7,6 +8,26 @@
 
   @media (min-width: @desktop) {
     margin-top: 75px;
+  }
+
+  &__background {
+    position: absolute;
+    border-bottom: 2px solid @basic-green;
+    height: 2px;
+    width: 50vw;
+    top: 15px;
+    right: calc((100vw - 280px) / -2);
+    z-index: -1;
+
+    @media (min-width: @tablet) {
+      width: 100vw;
+      top: 20px;
+      right: calc((100vw - 708px) / -2);
+    }
+
+    @media (min-width: @desktop) {
+      right: calc((100vw - 1220px) / -2);
+    }
   }
 
   &__row {
@@ -29,32 +50,16 @@
     font-size: 24px;
     font-weight: 400;
     line-height: 100%;
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: "Oswald regular", "Arial", sans-serif;
     background-color: @basic-white;
     color: @basic-black;
 
     margin-bottom: 34px;
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      width: 75px;
-      height: 3px;
-      margin-top: calc(1em / 2 + 3px);
-      background-color: @basic-green;
-      z-index: -1;
-    }
-
     @media (min-width: @tablet) {
       font-size: 36px;
       padding-left: 37px;
       padding-right: 35px;
-
-      &::after {
-        width: calc(100vw - 10px);
-        left: calc((100vw - @tablet + 60px) / -2);
-      }
     }
 
     @media (min-width: @desktop) {
@@ -127,7 +132,7 @@
   }
 
   &__title {
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: "Oswald regular", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -170,7 +175,7 @@
   }
 
   &__cell {
-    font-family: "Arial", sans-serif;
+    font-family: "Arial", "Helvetica", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -240,7 +245,7 @@
     }
 
     &-text {
-      font-family: "Arial", sans-serif;
+      font-family: "Arial", "Helvetica", sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
