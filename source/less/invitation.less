@@ -11,7 +11,9 @@
   }
 
   &--background {
-    background-color: @basic-grey;
+    @media (max-width: @desktop-min) {
+      background-color: @basic-grey;
+    }
   }
 
   &__title {
@@ -175,7 +177,8 @@
     }
 
     @media (min-width: @desktop) {
-      left: 908px;
+      //left: 908px;
+      left: calc(65% - 50px);
     }
   }
 }

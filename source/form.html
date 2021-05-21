@@ -5,14 +5,14 @@
   <title>Кэт энерджи</title>
   <link rel="icon" href="img/favicon.ico">
   <!--  <link href="css/normalize.css" rel="stylesheet">-->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <header class="header">
   <div class="container header__wrapper">
     <div class="header__top">
-      <a class="header__top header__top--link">
+      <a class="header__top header__top--link" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-desktop.png">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
@@ -210,11 +210,13 @@
     </form>
   </div>
   <section class="invitation invitation--background">
-    <div class="container invitation__box container-form">
-      <h2 class="invitation__title">Приглашаем <br>к сотрудничеству дилеров!</h2>
-      <div class="invitation__text">
-        <p class="invitation__street">ул. Большая Конюшенная, д. 19/8</p>
-        <p class="invitation__city">Санкт-Петербург</p>
+    <div class="container container-map">
+      <div class="invitation__box">
+        <h2 class="invitation__title">Приглашаем<br> к сотрудничеству<br> дилеров!</h2>
+        <div class="invitation__text">
+          <address class="invitation__street">ул. Большая Конюшенная, д. 19/8</address>
+          <address class="invitation__city">Санкт-Петербург</address>
+        </div>
       </div>
     </div>
   </section>
@@ -276,7 +278,7 @@
     </div>
   </div>
 </footer>
-<script src="js/script.js"></script>
-<script src="js/form.js"></script>
+<script src="js/script.min.js"></script>
+<!--<script src="js/form.min.js"></script>-->
 </body>
 </html>
