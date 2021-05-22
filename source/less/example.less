@@ -244,6 +244,11 @@
       width: 100%;
       height: 232px;
       display: none;
+      background-size: 311px 232px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/before-mobile@2x.png");
+      }
 
       @media (max-width: @mobile) {
         background-position-x: center;
@@ -254,6 +259,11 @@
         background-image: url("../img/before-tablet@1x.png");
         width: 345px;
         height: 517px;
+        background-size: 354px 620px;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/before-tablet@2x.png");
+        }
       }
     }
 
@@ -263,13 +273,23 @@
       width: 100%;
       height: 322px;
       display: none;
+      background-size: 261px 240px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/after-mobile@2x.png");
+      }
 
       @media (min-width: @tablet) {
         display: block;
         background-image: url("../img/after-tablet@1x.png");
         width: 345px;
         height: 517px;
-        background-position: right;
+        background-position-x: right;
+        background-size: 354px 607px;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/after-tablet@2x.png");
+        }
       }
     }
 

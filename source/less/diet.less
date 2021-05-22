@@ -12,7 +12,7 @@
   &__nutrition {
     background-color: @basic-grey;
     margin-top: 25px;
-    display: flex;
+    //display: flex;
 
     position: relative;
 
@@ -27,6 +27,11 @@
     }
   }
 
+  &__wrapper {
+    display: block;
+    padding-top: 25px;
+  }
+
   &__tittle {
     font-family: "Oswald regular", "Arial", sans-serif;
     font-style: normal;
@@ -38,13 +43,13 @@
     color: @basic-black;
 
     margin-left: 91px;
-    margin-top: 30px;
+    padding-top: 30px;
 
     @media (min-width: @tablet) {
       font-size: 36px;
       line-height: 100%;
       margin-left: 52px;
-      margin-top: 77px;
+      padding-top: 77px;
     }
 
     @media (min-width: @desktop) {
@@ -56,7 +61,7 @@
     font-size: 14px;
     line-height: 129%;
     color: @special_dark-grey;
-    margin-top: 29px;
+    margin-top: 30px;
     margin-left: 20px;
     margin-right: 33px;
     padding-bottom: 23px;
@@ -191,10 +196,6 @@
     }
   }
 
-  &__wrapper {
-    display: block;
-  }
-
   &__img {
     z-index: 1;
 
@@ -238,7 +239,7 @@
     margin-left: 20px;
     margin-right: 33px;
     margin-top: 15px;
-    margin-bottom: 18px;
+    padding-bottom: 18px;
 
     @media (min-width: @tablet) {
       margin-left: 52px;
